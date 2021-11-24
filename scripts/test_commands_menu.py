@@ -1,0 +1,19 @@
+#encoding: utf-8
+
+import maya.cmds as cmds
+import maya.cmds as cmds
+
+def show_message(message):
+    print(message)
+    cmds.inViewMessage(assistMessage=message,
+                        position='midCenter',
+                        fade=True,
+                        # fadeStayTime=3000,
+                        )
+
+def create_menu():
+    cmds.setParent('MayaWindow')
+    cmds.menu(label='Test Commands', tearOff=True)
+    cmds.menuItem(label='Test Command 1', command='import test_commands_menu; test_commands_menu.show_message("Test Command 1")')
+    cmds.menuItem(label='Test Command 2', command='import test_commands_menu; test_commands_menu.show_message("Test Command 2")')
+

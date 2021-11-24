@@ -1,0 +1,2 @@
+# mayapy_package_template
+Mayaで使用するpythonパッケージを作成する際のテンプレートパッケージ
