@@ -12,7 +12,7 @@ def _requires_from_file(filename):
     return open(filename).read().splitlines()
 
 setup(
-    name='mayapy_package_utilities',
+    name='maya_scene_parser',
     version='0.1.0',
     package_dir={"": "python"},
     packages=find_packages("python"),
